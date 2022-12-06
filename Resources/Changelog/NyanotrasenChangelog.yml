@@ -1336,3 +1336,29 @@ Entries:
     type: Tweak
   id: 142
   time: '2022-12-03T18:39:30.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Various fixes for serious issues related to power, lighting, emergency
+      lighting, and missing jobspawns
+    type: Fix
+  id: 143
+  time: '2022-12-05T14:12:24.0000000+00:00'
+- author: Leander-0
+  changes:
+  - message: rebalance of most of the melee weapons
+    type: Tweak
+  id: 144
+  time: '2022-12-05T17:50:00.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Removed RF sensitivity power. Current radio has no range and goes across
+      maps so it's impossible to balance.
+    type: Remove
+  - message: Oracle will no longer ask for power cells.
+    type: Fix
+  - message: Fixed credits button.
+    type: Fix
+  - message: Moths should be carriable like other species now.
+    type: Fix
+  id: 145
+  time: '2022-12-05T18:24:25.0000000+00:00'
