@@ -1505,3 +1505,51 @@ Entries:
     type: Tweak
   id: 163
   time: '2022-12-10T04:00:04.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Added new security outpost.
+    type: Add
+  - message: Added new maintenance shaft and external access by the medical outpost.
+    type: Add
+  - message: Added more room to Perma.
+    type: Add
+  - message: Made northwest external access into essentially an engineer outpost.
+    type: Tweak
+  - message: Changed a few APCs around Arrivals.
+    type: Tweak
+  - message: Removed a few Banditos.
+    type: Remove
+  id: 164
+  time: '2022-12-10T21:37:45.0000000+00:00'
+- author: ODJ
+  changes:
+  - message: Various improvements to Lighthouse
+    type: Add
+  id: 165
+  time: '2022-12-10T21:37:51.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Possibly fixed maps getting yeeted to nullspace...
+    type: Fix
+  id: 166
+  time: '2022-12-11T01:44:30.0000000+00:00'
+- author: Rane
+  changes:
+  - message: For balance concerns and a serious bug found, nuke ops no longer require
+      whitelist.
+    type: Remove
+  id: 167
+  time: '2022-12-11T03:29:32.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Added new round end sound.
+    type: Add
+  id: 168
+  time: '2022-12-11T07:28:13.0000000+00:00'
+- author: Faye
+  changes:
+  - message: Added special space backgrounds for Angle, Lighthouse, one for both Ovni
+      and Pebble, and Tortuga!
+    type: Add
+  id: 169
+  time: '2022-12-11T18:46:15.0000000+00:00'
