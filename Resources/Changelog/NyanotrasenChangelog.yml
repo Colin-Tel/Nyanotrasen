@@ -1571,3 +1571,46 @@ Entries:
     type: Add
   id: 172
   time: '2022-12-11T23:21:16.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Added a significant amount of content to the east maints/spacewalk area.
+    type: Add
+  - message: Added fire extinguishers to the fire extinguisher cabinets.
+    type: Fix
+  id: 173
+  time: '2022-12-12T03:42:05.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Broke my rule not to commit on weekends. I fetched upstream and cherry-picked
+      a bunch so I could fix a possible NPC bug we had and get a head start for tomorrow.
+      Also, there's faxes now.
+    type: Add
+  id: 174
+  time: '2022-12-12T04:32:11.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Added some additional admin logs.
+    type: Add
+  - message: You can no longer see spiders spinning webs through walls.
+    type: Fix
+  - message: Mice will no longer gain the ability to speak after being freed from
+      a cocoon.
+    type: Fix
+  - message: Fixed sacrificial altar's handling of SSD people.
+    type: Fix
+  - message: Salvage technicians spawn with the proper backpack.
+    type: Fix
+  id: 175
+  time: '2022-12-12T21:31:41.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Oracle no longer directly grants psychic powers.
+    type: Remove
+  - message: Oracle dispenses reagents as rewards.
+    type: Add
+  - message: Fixed several issues with Oracle's reagent handling.
+    type: Fix
+  - message: Oracle is now grammatically a feminine proper noun.
+    type: Tweak
+  id: 176
+  time: '2022-12-12T21:51:19.0000000+00:00'
