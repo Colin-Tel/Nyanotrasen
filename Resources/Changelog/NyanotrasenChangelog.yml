@@ -1614,3 +1614,54 @@ Entries:
     type: Tweak
   id: 176
   time: '2022-12-12T21:51:19.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Moved morgue air alarm.
+    type: Fix
+  id: 177
+  time: '2022-12-13T02:48:51.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Emergency shuttle arrival times have been increased for most alert levels
+      to be closer to typical SS13 server values.
+    type: Tweak
+  id: 178
+  time: '2022-12-13T03:23:04.0000000+00:00'
+- author: Rane
+  changes:
+  - message: You can no longer see gasping through walls.
+    type: Fix
+  id: 179
+  time: '2022-12-13T03:34:36.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Whitelisted nuclear operatives have been restored.
+    type: Fix
+  - message: Roundstart spawning should be a bit faster.
+    type: Fix
+  - message: Whitelist restrictions actually only apply when whitelist is enabled...
+    type: Fix
+  id: 180
+  time: '2022-12-13T04:20:29.0000000+00:00'
+- author: Rane
+  changes:
+  - message: More roles are available to unwhitelisted players.
+    type: Tweak
+  - message: Enabled security cadets to round out security slightly.
+    type: Add
+  id: 181
+  time: '2022-12-13T04:54:00.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Non-whitelisted players can play mice and hamsters and so on.
+    type: Add
+  - message: You should get more instant updates on your whitelist status.
+    type: Fix
+  id: 182
+  time: '2022-12-13T05:53:58.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Okay, your client has the correct whitelist status this time (real.)
+    type: Fix
+  id: 183
+  time: '2022-12-13T09:06:07.0000000+00:00'
