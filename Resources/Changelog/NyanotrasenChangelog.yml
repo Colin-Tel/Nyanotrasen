@@ -1665,3 +1665,81 @@ Entries:
     type: Fix
   id: 183
   time: '2022-12-13T09:06:07.0000000+00:00'
+- author: Androofroo
+  changes:
+  - message: Added new content to Ovni.
+    type: Add
+  - message: Fixed several issues with Ovni.
+    type: Fix
+  id: 184
+  time: '2022-12-13T19:40:31.0000000+00:00'
+- author: Kromabae
+  changes:
+  - message: Fax machines to pebble
+    type: Add
+  id: 185
+  time: '2022-12-13T19:39:41.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Added new content to Angle.
+    type: Add
+  id: 186
+  time: '2022-12-13T19:41:03.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Fixed links to the wiki in books.
+    type: Fix
+  - message: Fixed the physical description of ichor.
+    type: Fix
+  id: 187
+  time: '2022-12-13T19:43:59.0000000+00:00'
+- author: Emisse
+  changes:
+  - message: Added a fax machine to CentComm for admin use.
+    type: Add
+  id: 188
+  time: '2022-12-13T20:42:34.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Arachne bodies are accurately modeled now.
+    type: Add
+  id: 189
+  time: '2022-12-13T21:40:30.0000000+00:00'
+- author: Velcroboy
+  changes:
+  - message: Tortuga Outpost Update
+    type: Add
+  id: 190
+  time: '2022-12-13T23:07:37.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Fixed a minor UI bug when there were no ghost roles available to you
+      but some locked behind whitelist.
+    type: Fix
+  id: 191
+  time: '2022-12-13T23:49:59.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Added some small improvements to laws menu. I still can't get a background
+      on them working...
+    type: Tweak
+  id: 192
+  time: '2022-12-14T00:03:56.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Admins can add or remove laws at specific indicies.
+    type: Add
+  id: 193
+  time: '2022-12-14T01:39:25.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Non-whitelisted users can now play as PAIs.
+    type: Add
+  id: 194
+  time: '2022-12-14T01:53:31.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Engineering lathe is up to date on what electronics it can print.
+    type: Fix
+  id: 195
+  time: '2022-12-14T02:38:26.0000000+00:00'
