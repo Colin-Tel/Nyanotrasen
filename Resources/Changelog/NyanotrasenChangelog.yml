@@ -1840,3 +1840,17 @@ Entries:
     type: Tweak
   id: 206
   time: '2022-12-16T23:00:35.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Made several minor QoL changes to Angle.
+    type: Tweak
+  id: 207
+  time: '2022-12-17T18:01:33.0000000+00:00'
+- author: Rane
+  changes:
+  - message: As my last PR before break (real) I got some help debugging the oneirophage
+      lingering invis. This should remove the bugs from simply moving through webs
+      in a strange way.
+    type: Fix
+  id: 208
+  time: '2022-12-18T04:30:59.0000000+00:00'
