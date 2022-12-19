@@ -1860,3 +1860,32 @@ Entries:
     type: Add
   id: 209
   time: '2022-12-18T16:07:34.0000000+00:00'
+- author: Kromabae
+  changes:
+  - message: New Kitchen stuff to Pebble
+    type: Add
+  id: 210
+  time: '2022-12-19T00:12:34.0000000+00:00'
+- author: notafet
+  changes:
+  - message: Votes can once again be cast in-game.
+    type: Fix
+  id: 211
+  time: '2022-12-19T02:35:50.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Added a custom evac shuttle to Angle station.
+    type: Add
+  id: 212
+  time: '2022-12-19T02:41:21.0000000+00:00'
+- author: Vordenburg
+  changes:
+  - message: Added deep fryers.
+    type: Add
+  - message: Cooking oils are available in the kitchen supplies crate.
+    type: Add
+  - message: Butter can be put in the reagent grinder then processed with heat into
+      ghee.
+    type: Tweak
+  id: 213
+  time: '2022-12-19T02:46:19.0000000+00:00'
