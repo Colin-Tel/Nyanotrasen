@@ -2173,3 +2173,133 @@ Entries:
     type: Add
   id: 255
   time: '2023-01-06T18:49:15.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Added max player count of 65 for Shoukou to be selected in lobby.
+    type: Add
+  id: 256
+  time: '2023-01-09T14:44:47.0000000+00:00'
+- author: deltanedas
+  changes:
+  - message: Added a craftable fish labeler for your fish labeling needs
+    type: Add
+  id: 257
+  time: '2023-01-09T18:22:18.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Updated to latest upstream. Notably, deconstructing stuff with material
+      storage will now spawn the materials inside. Lathes should be much harder to
+      accidentally grief now.
+    type: Add
+  id: 258
+  time: '2023-01-09T18:28:44.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Rat servants are much weaker but much cheaper and more spammable. They
+      are also items now and can be eaten by felinids like mice.
+    type: Tweak
+  - message: Chance for survival rounds has been reduced.
+    type: Tweak
+  - message: Survival max chaos and ramping time adjusted.
+    type: Tweak
+  - message: Oracle and the sophic grammateus will not fade their sprite when you
+      stand behind them.
+    type: Add
+  - message: Added some more busted items to oracle blacklist.
+    type: Fix
+  - message: Drills are now properly in the engineering lathe.
+    type: Fix
+  - message: Circuit imprinter now correctly uses the engineering board sprite.
+    type: Fix
+  - message: Removed a lobby song that was too good for you philistines.
+    type: Remove
+  - message: Primates can disarm now. Monkeys and gorillas' natural weapons make sense.
+    type: Fix
+  id: 259
+  time: '2023-01-09T19:09:47.0000000+00:00'
+- author: Rane
+  changes:
+  - message: 'Metempsychotic machine changes to karma: Your chance for humanoid is
+      now 75% + 25% for each tier of medical scanner part upgrades. This means at
+      tier 1 your chance on first metempsychosis for a humanoid is 100%. However,
+      the penalty for consecutive metempsychoses has been increased to 25%.'
+    type: Tweak
+  - message: The biomass cost reduction upgrade now works on the metempsychotic machine.
+    type: Fix
+  id: 260
+  time: '2023-01-09T19:41:49.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Rat servants can escape inventory and attack people holding them.
+    type: Fix
+  - message: Felinids can't eat rats when the felinid is overfed.
+    type: Fix
+  - message: Rats are grindable.
+    type: Fix
+  id: 261
+  time: '2023-01-09T22:46:09.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Doors and a few other high health metallic entities now have the minimum
+      damage requirement like rwindows and walls do.
+    type: Tweak
+  id: 262
+  time: '2023-01-10T02:29:29.0000000+00:00'
+- author: ZeroDayDaemon
+  changes:
+  - message: Added fun!
+    type: Add
+  - message: Removed fun!
+    type: Remove
+  id: 263
+  time: '2023-01-10T02:46:39.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Rat servants should be able to attack when you pick them up now...
+    type: Fix
+  id: 264
+  time: '2023-01-10T03:41:41.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Added CPR.
+    type: Add
+  - message: Helping people up works again.
+    type: Fix
+  id: 265
+  time: '2023-01-10T19:47:42.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Rat servant attack range from 1.5m to 1m.
+    type: Tweak
+  - message: Rat servant attack damage from 5 slash 3 piercing to 4 slash 2 piercing.
+    type: Tweak
+  - message: Added new AI factions for rats and cats.
+    type: Add
+  - message: Cats are now always hostile to rats.
+    type: Add
+  - message: A bunch of other factions that weren't hostile before are now hostile
+      to either passive rats or all rats.
+    type: Add
+  id: 266
+  time: '2023-01-10T21:54:41.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Borgs have lost a few particular accesses before we get a Butlerian jihad.
+    type: Remove
+  - message: Cancer Mouse has a built in radio so he can soapbox more effectively.
+    type: Add
+  - message: CPR requires removing any outer clothing, like coats.
+    type: Tweak
+  - message: Non-medically trained people can crack the sternum during CPR. The chance
+      scales off of relative mass.
+    type: Tweak
+  - message: Medipens will no longer go through hardsuits.
+    type: Tweak
+  - message: Fixed knocking.
+    type: Fix
+  - message: Ghosts can see binary chat.
+    type: Fix
+  - message: Spiders can no longer spin webs from inside containers.
+    type: Fix
+  id: 267
+  time: '2023-01-10T22:07:12.0000000+00:00'

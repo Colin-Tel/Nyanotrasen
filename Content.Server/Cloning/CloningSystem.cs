@@ -79,7 +79,6 @@ namespace Content.Server.Cloning
             SubscribeLocalEvent<CloningPodComponent, ComponentInit>(OnComponentInit);
             SubscribeLocalEvent<CloningPodComponent, RefreshPartsEvent>(OnPartsRefreshed);
             SubscribeLocalEvent<CloningPodComponent, UpgradeExamineEvent>(OnUpgradeExamine);
-            SubscribeLocalEvent<CloningPodComponent, MachineDeconstructedEvent>(OnDeconstruct);
             SubscribeLocalEvent<RoundRestartCleanupEvent>(Reset);
             SubscribeLocalEvent<BeingClonedComponent, MindAddedMessage>(HandleMindAdded);
             SubscribeLocalEvent<CloningPodComponent, PortDisconnectedEvent>(OnPortDisconnected);
@@ -106,11 +105,6 @@ namespace Content.Server.Cloning
         {
             args.AddPercentageUpgrade("cloning-pod-component-upgrade-speed", component.BaseCloningTime / component.CloningTime);
             args.AddPercentageUpgrade("cloning-pod-component-upgrade-biomass-requirement", component.BiomassRequirementMultiplier);
-        }
-
-        private void OnDeconstruct(EntityUid uid, CloningPodComponent component, MachineDeconstructedEvent args)
-        {
-            _serverStackSystem.SpawnMultiple(component.MaterialCloningOutput, _material.GetMaterialAmount(uid, component.RequiredMaterial), Transform(uid).Coordinates);
         }
 
         internal void TransferMindToClone(Mind.Mind mind)
@@ -165,7 +159,7 @@ namespace Content.Server.Cloning
             args.PushMarkup(Loc.GetString("cloning-pod-biomass", ("number", _material.GetMaterialAmount(uid, component.RequiredMaterial))));
         }
 
-        public bool TryCloning(EntityUid uid, EntityUid bodyToClone, Mind.Mind mind, CloningPodComponent? clonePod, float failChanceModifier = 1)
+        public bool TryCloning(EntityUid uid, EntityUid bodyToClone, Mind.Mind mind, CloningPodComponent? clonePod, float failChanceModifier = 1, float karmaBonus = 0.25f)
         {
             if (!Resolve(uid, ref clonePod))
                 return false;
@@ -200,7 +194,7 @@ namespace Content.Server.Cloning
             if (!TryComp<PhysicsComponent>(bodyToClone, out var physics))
                 return false;
 
-            var cloningCost = clonePod.ConstantBiomassCost == null ? (int) Math.Round(physics.FixturesMass * clonePod.BiomassRequirementMultiplier) : (int) clonePod.ConstantBiomassCost;
+            var cloningCost = clonePod.ConstantBiomassCost == null ? (int) Math.Round(physics.FixturesMass * clonePod.BiomassRequirementMultiplier) : (int) Math.Round((float) clonePod.ConstantBiomassCost * clonePod.BiomassRequirementMultiplier);
 
             if (clonePod.ConstantBiomassCost == null && _configManager.GetCVar(CCVars.BiomassEasyMode))
                 cloningCost = (int) Math.Round(cloningCost * EasyModeCloningCost);
@@ -242,7 +236,7 @@ namespace Content.Server.Cloning
             }
             // end of genetic damage checks
 
-            var mob = FetchAndSpawnMob(clonePod, speciesPrototype, humanoid, bodyToClone);
+            var mob = FetchAndSpawnMob(clonePod, speciesPrototype, humanoid, bodyToClone, karmaBonus);
 
             var cloneMindReturn = EntityManager.AddComponent<BeingClonedComponent>(mob);
             cloneMindReturn.Mind = mind;
@@ -334,8 +328,7 @@ namespace Content.Server.Cloning
             }
             _spillableSystem.SpillAt(uid, bloodSolution, "PuddleBlood");
 
-            var biomassStack = Spawn(clonePod.MaterialCloningOutput, transform.Coordinates);
-            _stackSystem.SetCount(biomassStack, _robustRandom.Next(1, (int) (clonePod.UsedBiomass / 2.5)));
+            _serverStackSystem.SpawnMultipleFromMaterial(_robustRandom.Next(1, (int) (clonePod.UsedBiomass / 2.5)), clonePod.RequiredMaterial, Transform(uid).Coordinates);
 
             clonePod.UsedBiomass = 0;
             RemCompDeferred<ActiveCloningPodComponent>(uid);
@@ -344,7 +337,7 @@ namespace Content.Server.Cloning
         /// <summary>
         /// Handles fetching the mob and any appearance stuff...
         /// </summary>
-        private EntityUid FetchAndSpawnMob(CloningPodComponent clonePod, SpeciesPrototype speciesPrototype, HumanoidComponent humanoid, EntityUid bodyToClone)
+        private EntityUid FetchAndSpawnMob(CloningPodComponent clonePod, SpeciesPrototype speciesPrototype, HumanoidComponent humanoid, EntityUid bodyToClone, float karmaBonus)
         {
             List<Sex> sexes = new();
             bool switchingSpecies = false;
@@ -354,7 +347,7 @@ namespace Content.Server.Cloning
 
             if (TryComp<MetempsychoticMachineComponent>(clonePod.Owner, out var metem))
             {
-                toSpawn = _metem.GetSpawnEntity(clonePod.Owner, out var newSpecies, oldKarma?.Score, metem);
+                toSpawn = _metem.GetSpawnEntity(clonePod.Owner, karmaBonus, speciesPrototype, out var newSpecies, oldKarma?.Score, metem);
                 applyKarma = true;
 
                 if (newSpecies != null)
