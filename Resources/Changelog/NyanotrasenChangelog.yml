@@ -2303,3 +2303,54 @@ Entries:
     type: Fix
   id: 267
   time: '2023-01-10T22:07:12.0000000+00:00'
+- author: Velcroboy
+  changes:
+  - message: Added slimmer, trimmer arena on Arena Station
+    type: Add
+  - message: Unlocks gladiator lounge and arena area. Gladiators no longer confined
+      to cell on round start.
+    type: Add
+  - message: Added better viewing areas for arena fans to watch. Can now see entire
+      fighting pit.
+    type: Add
+  - message: Added live ducks!
+    type: Add
+  id: 268
+  time: '2023-01-11T02:04:30.0000000+00:00'
+- author: Rane
+  changes:
+  - message: Cats will chase mice now.
+    type: Add
+  - message: Rats won't chase too far from the rat king.
+    type: Tweak
+  id: 269
+  time: '2023-01-11T02:06:02.0000000+00:00'
+- author: ZeroDayDaemon
+  changes:
+  - message: Added fun!
+    type: Add
+  - message: Removed fun!
+    type: Remove
+  id: 270
+  time: '2023-01-11T04:16:30.0000000+00:00'
+- author: DEATHB4DEFEAT
+  changes:
+  - message: Added a Brief command for admins, allowing transferring to and from a
+      mob of choice with a custom outfit and name.
+    type: Add
+  id: 271
+  time: '2023-01-11T16:57:25.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - message: Added recipes for some mixed drinks, as well as giving them ethanol content.
+    type: Add
+  id: 272
+  time: '2023-01-11T17:58:39.0000000+00:00'
+- author: EmoGarbage404
+  changes:
+  - message: Refactored research.
+    type: Fix
+  - message: Added technology disks.
+    type: Add
+  id: 273
+  time: '2023-01-11T18:21:35.0000000+00:00'
