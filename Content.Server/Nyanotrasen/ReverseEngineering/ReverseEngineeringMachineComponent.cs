@@ -3,6 +3,7 @@ using Content.Shared.Construction.Prototypes;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Robust.Shared.Audio;
 
 namespace Content.Server.ReverseEngineering;
 
@@ -37,8 +38,19 @@ public sealed partial class ReverseEngineeringMachineComponent : Component
     /// Whether the machine is going to receive the danger bonus.
     /// </summary>
     [DataField("dangerBonus")]
-    public int DangerBonus = 2;
+    public int DangerBonus = 3;
 
+    [DataField("failSound1")]
+    public SoundSpecifier FailSound1 { get; set; } = new SoundPathSpecifier("/Audio/Effects/spray.ogg");
+
+    [DataField("failSound2")]
+    public SoundSpecifier FailSound2 { get; set; } = new SoundPathSpecifier("/Audio/Effects/sparks4.ogg");
+
+    [DataField("successSound")]
+    public SoundSpecifier SuccessSound { get; set; } = new SoundPathSpecifier("/Audio/Machines/microwave_done_beep.ogg");
+
+    [DataField("clickSound")]
+    public SoundSpecifier ClickSound = new SoundPathSpecifier("/Audio/Machines/machine_switch.ogg");
     public EntityUid? CurrentItem;
 
     /// <summary>
