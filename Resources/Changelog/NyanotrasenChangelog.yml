@@ -2198,3 +2198,26 @@ Entries:
   - {message: Added The Lid O' Saws!, type: Add}
   id: 337
   time: '2023-01-25T06:14:33.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: Fixed spawning as cataloguer., type: Fix}
+  - {message: Fixed a desync with blindfolds that allowed permanent blindness to be
+      removed., type: Fix}
+  id: 338
+  time: '2023-01-25T19:44:47.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: Fixed a mindswap regression caused by upstream changes to the mind system.,
+    type: Fix}
+  id: 339
+  time: '2023-01-25T20:49:56.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: Rewrote several parts of the rules., type: Tweak}
+  id: 340
+  time: '2023-01-26T05:46:02.0000000+00:00'
+- author: tomasalves8
+  changes:
+  - {message: Increase Glow Duration for the Red Glowstick, type: Tweak}
+  id: 341
+  time: '2023-01-26T18:31:11.0000000+00:00'
