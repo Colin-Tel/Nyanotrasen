@@ -2221,3 +2221,26 @@ Entries:
   - {message: Increase Glow Duration for the Red Glowstick, type: Tweak}
   id: 341
   time: '2023-01-26T18:31:11.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: You can be redirected to another server when the server is full or from
+      the ghost roles menu., type: Add}
+  id: 342
+  time: '2023-01-26T23:44:46.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: The health bars from medical HUDs have been completely rewritten! They
+      should look a bit fancier and everyone should get a small performance improvement.,
+    type: Add}
+  id: 343
+  time: '2023-01-27T00:44:05.0000000+00:00'
+- author: QuizzyQuin
+  changes:
+  - {message: Added two new end round clips, type: Add}
+  id: 344
+  time: '2023-01-27T05:54:46.0000000+00:00'
+- author: ODJ
+  changes:
+  - {message: Track 4, type: Add}
+  id: 345
+  time: '2023-01-27T08:35:07.0000000+00:00'
