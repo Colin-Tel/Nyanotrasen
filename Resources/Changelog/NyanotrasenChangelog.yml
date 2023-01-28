@@ -2255,3 +2255,49 @@ Entries:
   - {message: Changed many outer-layer clothes to withstand cold temperatures., type: Tweak}
   id: 347
   time: '2023-01-27T19:42:44.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: Merged upstream. Lots of bugfixes and refactors. Be sure to report any
+      regressions., type: Add}
+  id: 348
+  time: '2023-01-27T19:48:03.0000000+00:00'
+- author: Debug
+  changes:
+  - {message: Completely overhauled Ovni's Epistemics and air alarms., type: Tweak}
+  id: 349
+  time: '2023-01-27T19:48:20.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: I think I've tracked down the main mind swap regression from the past
+      2 weeks and fixed it., type: Fix}
+  id: 350
+  time: '2023-01-27T20:24:07.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: We'll only redirect to servers with at least 3 players on., type: Tweak}
+  id: 351
+  time: '2023-01-27T22:33:47.0000000+00:00'
+- author: tomasalves8
+  changes:
+  - {message: Players can no longer unbuckle or toggle internals while dead or in
+      critical condition, type: Fix}
+  id: 352
+  time: '2023-01-27T22:36:29.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: 'Drones are back with a new overlay and some of their old law enforcement
+      mechanics tweaked. Fifth time is the charm? Don''t make me disable them again.',
+    type: Add}
+  - {message: Drone interaction blocker is predicted., type: Fix}
+  id: 353
+  time: '2023-01-28T01:13:28.0000000+00:00'
+- author: Colin-Tel
+  changes:
+  - {message: Added Sake and Soju bottles and glasses. Kanpai!, type: Add}
+  id: 354
+  time: '2023-01-28T04:08:18.0000000+00:00'
+- author: router
+  changes:
+  - {message: Added more triggers to the emoting system., type: Tweak}
+  id: 355
+  time: '2023-01-28T04:37:09.0000000+00:00'
