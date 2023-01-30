@@ -2318,3 +2318,36 @@ Entries:
       working on the brand new salvage set, check our mapping channel.', type: Remove}
   id: 358
   time: '2023-01-28T22:31:26.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: The station's automated PA system has been upgraded., type: Add}
+  id: 359
+  time: '2023-01-30T04:41:17.0000000+00:00'
+- author: Debug
+  changes:
+  - {message: Fixed Moth and Felinid screams using the wrong sound, type: Fix}
+  id: 360
+  time: '2023-01-30T18:18:40.0000000+00:00'
+- author: Vordenburg
+  changes:
+  - {message: Screams should no longer double., type: Fix}
+  id: 361
+  time: '2023-01-30T21:21:51.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: Merged upstream. Their killer feature for this weekend is headset encryption
+      keys., type: Add}
+  id: 362
+  time: '2023-01-30T21:24:07.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: Jetpacks and syndicate encryption keys can be reverse engineered., type: Add}
+  - {message: Fixed the draw depth for the reverse engineering machine., type: Fix}
+  id: 363
+  time: '2023-01-30T22:04:59.0000000+00:00'
+- author: Faye
+  changes:
+  - {message: Did a pass on all of the N.E.I.L. voice lines after player feedback.,
+    type: Add}
+  id: 364
+  time: '2023-01-30T22:05:16.0000000+00:00'
