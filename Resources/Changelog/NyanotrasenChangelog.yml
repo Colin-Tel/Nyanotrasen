@@ -2351,3 +2351,23 @@ Entries:
     type: Add}
   id: 364
   time: '2023-01-30T22:05:16.0000000+00:00'
+- author: Rane
+  changes:
+  - {message: Bluespace crystals can be recovered from deconstruction., type: Fix}
+  id: 365
+  time: '2023-01-30T23:31:42.0000000+00:00'
+- author: jick
+  changes:
+  - {message: Added a corridor between Salvage and Cargo on Ovni, type: Tweak}
+  id: 366
+  time: '2023-01-31T00:33:11.0000000+00:00'
+- author: Velcroboy
+  changes:
+  - {message: Rebalanced angry critters!, type: Tweak}
+  id: 367
+  time: '2023-01-31T00:38:50.0000000+00:00'
+- author: jick
+  changes:
+  - {message: Scrubber backpressure now comes out of scrubbers instead of vents, type: Fix}
+  id: 368
+  time: '2023-01-31T01:33:57.0000000+00:00'
