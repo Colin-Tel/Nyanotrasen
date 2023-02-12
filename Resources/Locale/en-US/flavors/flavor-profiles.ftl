@@ -178,3 +178,5 @@ flavor-complex-sax = like jazz
 
 ## Nyano???
 flavor-complex-enthralling = enthralling
+flavor-complex-sublime = sublime
+flavor-complex-holy = heavenly

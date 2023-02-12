@@ -12,6 +12,9 @@
     layers:
       - state: willowisp
         shader: unshaded
+  - type: GlimmerWisp
+  - type: DoAfter
+  - type: PotentialPsionic
   - type: Psionic
     removable: false
   - type: NoosphericZapPower
@@ -55,21 +58,17 @@
           path: /Audio/Nyanotrasen/Mobs/GlimmerWisp/wail.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
-          MaterialBluespace:
+          Ectoplasm:
             min: 1
             max: 1
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: Damageable
-    damageContainer: Biological
-    damageModifierSet: GlimmerWisp
+    damageContainer: Spirit
+    damageModifierSet: Spirit
   - type: Actions
   - type: Alerts
   - type: CombatMode
-    combatToggleAction:
-      enabled: false
-      autoPopulate: false
-      name: action-name-combat
   - type: SlowOnDamage
     speedModifierThresholds:
       60: 0.7
@@ -78,13 +77,16 @@
     excess: 100
   - type: InputMover
   - type: MobMover
+  - type: Examiner
   - type: StatusEffects
     allowed:
       - Stun
+      - KnockedDown #KnockedDown is inseperable from stun because... IT JUST IS OK?
       - SlowedDown
       - Pacified
   - type: PointLight
     color: "#419ba3"
+  - type: Speech
   - type: Gun
     fireRate: 0.7
     soundGunshot:
@@ -99,7 +101,7 @@
     infinite: true
     examinable: false
   - type: HTN
-    rootTask: SimpleRangedCompound
+    rootTask: GlimmerWispCompound
   - type: Faction
     factions:
       - GlimmerMonster
