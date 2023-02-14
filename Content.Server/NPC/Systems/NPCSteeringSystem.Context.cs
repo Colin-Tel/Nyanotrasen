@@ -50,7 +50,8 @@ public sealed partial class NPCSteeringSystem
         var ourCoordinates = xform.Coordinates;
         var destinationCoordinates = steering.Coordinates;
 
-        if (steering.LastCoordinates != ourCoordinates)
+        if (xform.Coordinates.TryDistance(EntityManager, steering.LastCoordinates, out var movedDistance) &&
+            movedDistance > 1)
         {
             steering.LastCoordinates = ourCoordinates;
             steering.LastTimeMoved = _timing.CurTime;
@@ -348,16 +349,16 @@ public sealed partial class NPCSteeringSystem
             if (!_physics.TryGetNearestPoints(uid, ent, out var pointA, out var pointB, xform, xformQuery.GetComponent(ent)))
                 continue;
 
-            var obstacleDirection = pointB - worldPos;
-            var obstableDistance = obstacleDirection.Length;
+            var obstacleDirection = pointB - pointA;
+            var obstacleDistance = obstacleDirection.Length;
 
-            if (obstableDistance > detectionRadius || obstableDistance == 0f)
+            if (obstacleDistance > detectionRadius || obstacleDistance == 0f)
                 continue;
 
             dangerPoints.Add(pointB);
             obstacleDirection = offsetRot.RotateVec(obstacleDirection);
             var norm = obstacleDirection.Normalized;
-            var weight = obstableDistance <= agentRadius ? 1f : (detectionRadius - obstableDistance) / detectionRadius;
+            var weight = obstacleDistance <= agentRadius ? 1f : (detectionRadius - obstacleDistance) / detectionRadius;
 
             for (var i = 0; i < InterestDirections; i++)
             {
