@@ -94,6 +94,9 @@
   - type: MobMover
   - type: Body
     prototype: Bot
+  - type: Examiner
+  - type: Actions
+  - type: Alerts
 
 - type: entity
   parent: MobSiliconBase
@@ -183,6 +186,7 @@
   name: medibot
   description: No substitute for a doctor, but better than nothing.
   components:
+  - type: DoAfter
   - type: Medibot
   - type: Sprite
     drawdepth: Mobs
@@ -199,3 +203,12 @@
     interactFailureString: petting-failure-medibot
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
+  - type: ShowHealthBars
+    damageContainer: Biological
+  - type: GhostTakeoverAvailable
+    makeSentient: true
+    allowSpeech: true
+    allowMovement: true
+    whitelistRequired: false
+    name: ghost-role-information-medibot-name
+    description: ghost-role-information-medibot-description
