@@ -61,10 +61,10 @@
 - type: entity
   id: SpawnPointCyborg
   parent: SpawnPointJobBase
-  name: cyborg
+  name: robot
   components:
   - type: SpawnPoint
-    job_id: Cyborg
+    job_id: Robot
   - type: Sprite
     layers:
       - state: green
@@ -73,10 +73,10 @@
 - type: entity
   id: SpawnPointMedicalCyborg
   parent: SpawnPointJobBase
-  name: medical cyborg
+  name: medical robot
   components:
   - type: SpawnPoint
-    job_id: MedicalCyborg
+    job_id: MedicalRobot
   - type: Sprite
     layers:
       - state: green
